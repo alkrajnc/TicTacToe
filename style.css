@@ -1,0 +1,112 @@
+html{
+    font-family: monospace;
+    background-color:  rgb(55, 67, 78);
+    color: white;
+}
+h1{
+    font-size: 4rem;
+    text-align: center;
+}
+.wrapper{
+    display: grid;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    transition: all 200ms ease;
+}
+.board{
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem;
+    grid-template-rows: 10rem 10rem 10rem 10rem 10rem;
+    justify-content: center;
+}
+.win{
+    width: auto;
+    aspect-ratio: 1;
+    border: 1px solid;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+}
+button{
+    margin: 3.5rem 7rem;
+    grid-column: span 3;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .7);
+    border-radius: 0.5rem;
+    color: white;
+    font-size: large;
+    transition: all 150ms ease;
+}
+button:hover{
+    background-color: white;
+    border: none;
+    color: black;
+}
+.player-container{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 20%;
+    text-align: center;
+    width: 40%;
+    background-color: rgb(33, 31, 38);
+    border-radius: 0.75rem;
+    border-left: 0.75rem solid rgb(0, 247, 132);
+    justify-content: center;
+    transition: all 250ms ease;
+    transform: translateX(-800px);
+    padding: 1rem;
+}
+.output{
+    position: absolute;
+}
+.output > *{
+    border-bottom: 1px solid rgba(99, 239, 225, 0.57);
+    padding: 0 1rem;
+}
+.winner{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 20%;
+    text-align: center;
+    width: 40%;
+    background-color: rgb(33, 31, 38);
+    border-radius: 0.75rem;
+    border-left: 0.75rem solid rgb(0, 247, 132);
+    justify-content: center;
+    transition: all 250ms ease;
+    transform: translateX(-800px);
+}
+#winner {
+    font-size: clamp(1rem, 2.5rem, 2.5rem);
+}
+#title{
+    font-size: clamp(1rem, 2.2rem, 2.8rem);
+}
+.xmark {
+    position: absolute;
+    align-self: flex-end;
+    top: 0;
+    font-size: 1.5rem;
+    padding:  0.5rem 0.85rem;
+    transition: all 200ms ease;
+}
+.xmark:hover{
+    color: rgba(0, 255, 255, 0.514);
+    cursor: pointer;
+    transform: scale(1.2);
+}

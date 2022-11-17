@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <h1>Tic Tac Toe</h1>
+        
+        <div class="board">
+            <div class="win"></div>
+            <div class="win"></div>
+            <div class="win"></div>
+            <div class="win"></div>
+            <div class="win"></div>
+            <div class="win"></div>
+            <div class="win"></div>
+            <div class="win"></div>
+            <div class="win"></div>
+            <button id="reset">Reset</button>
+            <button id="settings">Set player names</button>
+        </div>
+        <div class="output">
+            <h2>Game info</h3>
+            <h3 id="currentPlayer"></h3>
+            <h3 id="moves"></h3>
+            <h3 id="info"></h3>
+            <h3 class="winstreak"></h3>
+            <h3 class="winstreak"></h3>
+        </div>
+    </div>
+    <div class="winner">
+        <div class="xmark">x</div>
+        <h1 id="title">Congrats!</h1>
+        <h2 id="winner">player</h1>
+    </div>
+    <div class="player-container">
+            <h3>Player 1:</h3>
+            <input type="text" name="customPlayer" id="">
+            <h3>Player 2:</h3>
+            <input type="text" name="customPlayer">
+            <button id="submitPlayers">Submit</button>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
